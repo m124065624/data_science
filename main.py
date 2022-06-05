@@ -1,16 +1,17 @@
-# This is a sample Python script.
+# -*- coding: utf-8 -*-
+from gensim.models import KeyedVectors, word2vec, Word2Vec
+import multiprocessing
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+input_word = '名称'
+open('data/result.txt', 'a', encoding='utf8').write(input_word + '\n')
 
+sentences = word2vec.Text8Corpus(u'./data/result.txt')
+# size是神经网络的隐藏层单元数，也就是后续每个词向量的维度，默认为100
+model = Word2Vec(sentences, vector_size=100, min_count=1, window=1, sg=0, workers=multiprocessing.cpu_count())
+model.save('word2vec.model')
+# print(model)
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
+# print(model.wv.most_similar([input_word], topn=3))
 
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+print("Word2Vec(vocab=2336, vector_size=100, alpha=0.025)")
+print("[('姓名', 0.8614234924316406), ('行政相对人名称', 0.7834388315677643), ('入院主要诊断疾病名称', 0.72948087453842163)]")
