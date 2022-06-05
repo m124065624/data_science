@@ -1,0 +1,49 @@
+attrs @ file:///opt/conda/conda-bld/attrs_1642510447205/work
+Automat @ file:///tmp/build/80754af9/automat_1600298431173/work
+bcrypt @ file:///opt/concourse/worker/volumes/live/1172806a-f878-48a0-7af5-41c3e695d608/volume/bcrypt_1597936167937/work
+beautifulsoup4 @ file:///tmp/build/80754af9/beautifulsoup4_1631874778482/work
+brotlipy==0.7.0
+certifi==2021.5.30
+cffi @ file:///opt/concourse/worker/volumes/live/6ed3f91b-28f6-4d58-6a9b-7a5e864c6554/volume/cffi_1625814710543/work
+charset-normalizer @ file:///tmp/build/80754af9/charset-normalizer_1630003229654/work
+constantly==15.1.0
+cryptography @ file:///opt/concourse/worker/volumes/live/efc30a4d-1b2f-4c46-6f02-ff41b1cfc0e9/volume/cryptography_1635366582988/work
+cssselect==1.1.0
+hyperlink @ file:///tmp/build/80754af9/hyperlink_1610130746837/work
+idna @ file:///tmp/build/80754af9/idna_1637925883363/work
+importlib-metadata @ file:///opt/concourse/worker/volumes/live/9e8d9de1-344c-42b4-4a07-558ab22fb850/volume/importlib-metadata_1631916719011/work
+incremental @ file:///tmp/build/80754af9/incremental_1636629750599/work
+iniconfig @ file:///home/linux1/recipes/ci/iniconfig_1610983019677/work
+itemadapter @ file:///tmp/build/80754af9/itemadapter_1626442940632/work
+lxml @ file:///opt/concourse/worker/volumes/live/17ba375d-4c29-49b7-7c01-cd5236ec1e13/volume/lxml_1616443254080/work
+more-itertools @ file:///tmp/build/80754af9/more-itertools_1637733554872/work
+packaging @ file:///tmp/build/80754af9/packaging_1637314298585/work
+parsel @ file:///opt/concourse/worker/volumes/live/1efce8eb-89f3-4694-6820-bbee1c5891be/volume/parsel_1613041556835/work
+pluggy @ file:///opt/concourse/worker/volumes/live/409bfc5e-d287-4b42-6a80-4c27c39d0877/volume/pluggy_1615976308666/work
+py @ file:///opt/conda/conda-bld/py_1644396412707/work
+pyasn1 @ file:///Users/ktietz/demo/mc3/conda-bld/pyasn1_1629708007385/work
+pyasn1-modules==0.2.8
+pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
+PyDispatcher==2.0.5
+PyHamcrest @ file:///tmp/build/80754af9/pyhamcrest_1615748656804/work
+pymongo==3.11.4
+pyOpenSSL @ file:///opt/conda/conda-bld/pyopenssl_1643788558760/work
+pyparsing @ file:///tmp/build/80754af9/pyparsing_1635766073266/work
+PySocks @ file:///opt/concourse/worker/volumes/live/286ddfa9-f2fd-40b3-4c68-b14dbfd7c9fa/volume/pysocks_1605305809963/work
+pytest==6.2.4
+pytest-runner @ file:///tmp/build/80754af9/pytest-runner_1623663836848/work
+queuelib==1.5.0
+requests @ file:///tmp/build/80754af9/requests_1629994808627/work
+Scrapy @ file:///opt/concourse/worker/volumes/live/2edc3399-b973-42bc-5a17-1f6b6e3490f4/volume/scrapy_1606864748686/work
+service-identity @ file:///Users/ktietz/demo/mc3/conda-bld/service_identity_1629460757137/work
+six @ file:///tmp/build/80754af9/six_1644875935023/work
+soupsieve @ file:///tmp/build/80754af9/soupsieve_1636706018808/work
+toml @ file:///tmp/build/80754af9/toml_1616166611790/work
+Twisted @ file:///opt/concourse/worker/volumes/live/7c2b72c1-fa0f-4ff4-7700-22374311b8ed/volume/twisted_1614874398774/work
+typing_extensions @ file:///opt/conda/conda-bld/typing_extensions_1647553014482/work
+urllib3 @ file:///opt/conda/conda-bld/urllib3_1643638302206/work
+w3lib @ file:///Users/ktietz/demo/mc3/conda-bld/w3lib_1629359764703/work
+zipp @ file:///tmp/build/80754af9/zipp_1633618647012/work
+zope.interface @ file:///opt/concourse/worker/volumes/live/66855bea-0c13-4b34-5225-ad93cd3c26d5/volume/zope.interface_1625036171977/work
+
+openpyxl~=3.0.9
