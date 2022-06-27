@@ -2,4 +2,5 @@
 
 ### 运行方法
 
+命令行输入 `pip install requirement` 安装运行所需的库
 运行 main.py
