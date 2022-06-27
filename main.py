@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import heapq
+import re
 import time
 
 from gensim.models import KeyedVectors, word2vec, Word2Vec
@@ -15,6 +16,9 @@ data_process.process()
 result_amount = 3
 input_word = input("请输入待匹配串:\n")
 output_amount = int(input("请输入 top k:\n"))
+r = "[A-Za-z0-9_.!+-=——,$%^，。？、~@#￥%……&*《》<>「」{}【】()/]"
+input_word = re.sub(r, "", input_word)
+
 
 # 计算运行时间
 t1 = time.time()
@@ -36,13 +40,14 @@ for cut in cuts:
         input_word_cut.append(cut)
 
 # 将input_word加入数据源
-sentences = open(u'./data/result.txt')
-flag = 0
-for i in sentences:
-    if input_word in i:
-        flag = 1
-if flag == 0:
-    open('data/result.txt', 'a', encoding='utf8').write(input_word + '\n')
+for i in input_word_cut:
+    sentences = open(u'./data/result.txt')
+    flag = 0
+    for j in sentences:
+        if i in j:
+            flag = 1
+    if flag == 0:
+        open('data/result.txt', 'a', encoding='utf8').write(input_word_cut[i] + '\n')
 
 # 数据源分词
 sentences = open(u'./data/result.txt')
@@ -111,14 +116,19 @@ for i in final_result:
 
 max_number = heapq.nlargest(output_amount, similarity)
 max_index = []
+similarity_result = []
 for t in max_number:
     index = similarity.index(t)
     max_index.append(index)
+    similarity_result.append(similarity[index])
     similarity[index] = 0
 
+count = 0
 for i in max_index:
-    print(final_result[i])
+    print("匹配结果：" + final_result[i], end="")
+    print("相似度：%.2f" % similarity_result[count] + '%')
+    count = count + 1
 
 # 计算运行时间
 t2 = time.time()
-print("Calculating time: %.4f" % (t2 - t1))
+print("\n程序运行时间: %.4f" % (t2 - t1))
